@@ -124,4 +124,19 @@ $(document).ready(function(){
     $('#menu .back').click(function () {
         $('#menu-toggle').click();
     })
+
+});
+
+var moreBlock = $('.news-content__more-block');
+
+$('.news-content__more').on('click',function (){
+    moreBlock.slideUp();
+    var curentBlock = $(this).next();
+    if(curentBlock.is(':visible')){
+        curentBlock.slideUp();
+    }else{
+        curentBlock.slideDown();
+    }
+
+
 });
