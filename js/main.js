@@ -125,18 +125,18 @@ $(document).ready(function(){
         $('#menu-toggle').click();
     })
 
+    // Блок показа полоной новости
+    var moreBlock = $('.news-content__more-block');
+    $('.news-content__more').on('click',function (){
+        moreBlock.slideUp();
+        var curentBlock = $(this).next();
+        if(curentBlock.is(':visible')){
+            curentBlock.slideUp();
+        }else{
+            curentBlock.slideDown();
+        }
+    });
+
+
 });
 
-var moreBlock = $('.news-content__more-block');
-
-$('.news-content__more').on('click',function (){
-    moreBlock.slideUp();
-    var curentBlock = $(this).next();
-    if(curentBlock.is(':visible')){
-        curentBlock.slideUp();
-    }else{
-        curentBlock.slideDown();
-    }
-
-
-});

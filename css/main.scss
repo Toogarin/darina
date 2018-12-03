@@ -2085,7 +2085,101 @@ body{
 }
 /*disigner*/
 
+/*disigners*/
+.disigners-label {
+  padding: 20px 0 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media all and (min-width: 500px){
+    flex-direction: row;
+  }
+  .main-label {
+    margin-right: 10px;
+  }
+  .label-description {
+    font-size: 14px;
+    color: $grey2;
+  }
+}
+.disigners-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.disigners-item {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  @media all and (min-width: 360px){
+    width: 50%;
+    padding-top: 50%;
+  }
+  @media all and (min-width: 470px){
+    width: 33.333333%;
+    padding-top: 33.333333%;
+  }
+  @media all and (min-width: 768px){
+    width: 25%;
+    padding-top: 25%;
+  }
+  @media all and (min-width: 992px){
+    width: 20%;
+    padding-top: 20%;
+  }
+  @media all and (min-width: 1200px){
+    width: 16.6666667%;
+    padding-top: 16.6666667%;
+  }
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 25px;
+    background: url("../image/news/disigners.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+.disigners-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  &__text {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Museo Sans Cyrl 900';
+  }
+}
+.disigners-link {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    color: #fff;
+  }
+  span {
+    height: 3px;
+    line-height: 1px;
+    position: relative;
+    top: -4px;
+  }
+}
 
+/*disigners*/
 
 
 
