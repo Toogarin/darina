@@ -1259,10 +1259,20 @@ body {
   margin: 0 auto; }
 
 .indent-row {
-  padding: 0 25px; }
+  padding-right: 10px;
+  padding-left: 10px; }
   @media all and (min-width: 768px) {
     .indent-row {
-      padding: 0 30px; } }
+      padding-right: 30px;
+      padding-left: 30px; } }
+
+.indent-col {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  @media all and (min-width: 768px) {
+    .indent-col {
+      padding-top: 25px;
+      padding-bottom: 25px; } }
 
 .bread {
   font-size: 14px;
@@ -1719,5 +1729,225 @@ body {
     top: -4px; }
 
 /*disigners*/
+/*favorite*/
+.favorite-item {
+  position: relative;
+  border: 1px solid #e6e6e6;
+  color: #959595;
+  margin-bottom: 10px; }
+  @media all and (min-width: 768px) {
+    .favorite-item {
+      display: flex;
+      margin-bottom: -1px;
+      max-height: 209px;
+      overflow: hidden; } }
+  .favorite-item__close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background: #444444;
+    z-index: 10; }
+  .favorite-item__param {
+    padding: 10px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6; }
+    @media all and (min-width: 768px) {
+      .favorite-item__param {
+        flex-shrink: 0;
+        border-top: none;
+        border-bottom: none;
+        border-right: 1px solid #e6e6e6;
+        align-items: center;
+        display: flex; } }
+    @media all and (min-width: 992px) {
+      .favorite-item__param {
+        padding: 20px; } }
+    @media all and (min-width: 1200px) {
+      .favorite-item__param {
+        padding: 40px; } }
+  .favorite-item__tocart {
+    padding: 10px;
+    padding-top: 30px;
+    position: relative; }
+    @media all and (min-width: 768px) {
+      .favorite-item__tocart {
+        display: flex;
+        align-items: center; } }
+    @media all and (min-width: 992px) {
+      .favorite-item__tocart {
+        padding: 20px; } }
+    @media all and (min-width: 1200px) {
+      .favorite-item__tocart {
+        padding: 40px; } }
+
+@media all and (min-width: 768px) {
+  .img-and-description {
+    display: flex;
+    border-right: 1px solid #e6e6e6; } }
+.img-and-description__img {
+  text-align: center;
+  padding: 10px; }
+  @media all and (min-width: 768px) {
+    .img-and-description__img {
+      align-items: center;
+      display: flex; } }
+  @media all and (min-width: 992px) {
+    .img-and-description__img {
+      padding: 20px; } }
+  @media all and (min-width: 1200px) {
+    .img-and-description__img {
+      padding: 40px; } }
+.img-and-description__description {
+  padding: 10px; }
+  @media all and (min-width: 992px) {
+    .img-and-description__description {
+      padding: 20px 20px 20px 0; } }
+  @media all and (min-width: 1200px) {
+    .img-and-description__description {
+      padding: 40px 40px 40px 0; } }
+
+.favorite-label {
+  font-family: 'Museo Sans Cyrl 900';
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 18px;
+  color: #444444; }
+
+.favorite-description {
+  font-size: 14px; }
+  @media all and (min-width: 768px) {
+    .favorite-description {
+      max-height: 99px;
+      overflow: hidden; } }
+
+.param-favorite {
+  font-size: 14px; }
+  @media all and (min-width: 768px) {
+    .param-favorite {
+      max-height: 155px;
+      overflow: hidden; } }
+
+.param-item {
+  margin-bottom: 8px; }
+  .param-item span {
+    font-family: 'Museo Sans Cyrl 900';
+    font-size: 16px;
+    color: #444444;
+    margin-left: 10px; }
+
+.promo-favorite {
+  display: inline-block;
+  background: #87b44e;
+  padding: 4px 6px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px; }
+  .promo-favorite.red {
+    background: #f3475b; }
+
+.favorite-cart {
+  text-align: center; }
+  .favorite-cart__promo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    text-align: center; }
+  .favorite-cart__old {
+    text-align: center;
+    padding: 15px 0;
+    display: inline-block;
+    position: relative; }
+    .favorite-cart__old:after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      top: 26px;
+      background: red;
+      left: 0; }
+  .favorite-cart__cost {
+    text-align: center;
+    padding: 0 0 12px 0;
+    font-size: 40px;
+    color: #444444;
+    font-family: 'Museo Sans Cyrl 500'; }
+
+.favorite-button {
+  background: #444444;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Museo Sans Cyrl 500';
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: all 0.4s; }
+  .favorite-button:hover {
+    background: black; }
+  .favorite-button span {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    background: #fff; }
+
+/*favorite*/
+/*awords*/
+.awords-item {
+  padding: 15px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 3px; }
+  @media all and (min-width: 475px) {
+    .awords-item {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 28px;
+      max-height: 264px;
+      overflow: hidden;
+      box-sizing: border-box;
+      justify-content: space-between; } }
+  @media all and (min-width: 768px) {
+    .awords-item {
+      width: 50%;
+      border: 1px solid #e6e6e6;
+      margin-bottom: -1px;
+      border-left: none; } }
+  @media all and (min-width: 992px) {
+    .awords-item {
+      width: calc(100% / 3); } }
+  @media all and (min-width: 1200px) {
+    .awords-item {
+      width: calc(100% / 4); } }
+  @media all and (min-width: 475px) {
+    .awords-item__list {
+      max-width: 50%; } }
+
+.aword-item {
+  margin-right: 8px;
+  margin-bottom: 8px; }
+
+.aword-list__label {
+  font-family: 'Museo Sans Cyrl 900';
+  margin-bottom: 15px;
+  color: #444444; }
+.aword-list__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 157px;
+  overflow: hidden; }
+
+@media all and (min-width: 768px) {
+  .awords-list {
+    display: flex;
+    flex-wrap: wrap; } }
+
+/*awords*/
 
 /*# sourceMappingURL=main.css.map */

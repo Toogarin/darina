@@ -137,6 +137,13 @@ $(document).ready(function(){
         }
     });
 
+    var close = $('.favorite-item__close');
+
+    close.on('click',function (){
+        var curentFavorite = $(this).parent();
+        curentFavorite.fadeOut();
+    });
+
 
 });
 
