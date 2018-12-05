@@ -1276,23 +1276,29 @@ body {
 
 .bread {
   font-size: 14px;
-  padding-top: 30px;
-  padding-bottom: 30px; }
-  .bread span {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  @media all and (min-width: 768px) {
+    .bread {
+      padding-top: 30px;
+      padding-bottom: 30px; } }
+  .bread a {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-    margin-bottom: 8px; }
-    .bread span:hover {
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #444444; }
+    .bread a:hover {
       text-decoration: underline; }
-    .bread span:after {
+    .bread a:after {
       content: '';
       width: 8px;
       height: 12px;
       background: #cecece;
       margin: 0 8px 0 12px;
       display: block; }
-    .bread span:last-child:after {
+    .bread a:last-child:after {
       width: 0;
       height: 0; }
 
@@ -1656,14 +1662,11 @@ body {
     font-size: 14px;
     color: #959595; }
 
-.disigners-list {
-  display: flex;
-  flex-wrap: wrap; }
-
 .disigners-item {
   width: 100%;
   padding-top: 100%;
-  position: relative; }
+  position: relative;
+  float: left; }
   @media all and (min-width: 360px) {
     .disigners-item {
       width: 50%;
@@ -1705,6 +1708,8 @@ body {
     color: #fff;
     text-transform: uppercase;
     font-family: 'Museo Sans Cyrl 900'; }
+  .disigners-text__adress {
+    display: none; }
 
 .disigners-link {
   width: 20px;
@@ -1949,5 +1954,147 @@ body {
     flex-wrap: wrap; } }
 
 /*awords*/
+/*referense*/
+body.referens .label-description {
+  text-align: center; }
+body.referens .referense-menu {
+  display: block !important; }
+body.referens .disigners-text__adress {
+  display: block !important;
+  color: #fff;
+  font-size: 13px; }
+
+.referense-menu {
+  width: 100%;
+  background: #fae2ca;
+  display: none;
+  overflow: hidden;
+  min-height: 100px;
+  box-sizing: border-box;
+  position: relative; }
+  @media all and (min-width: 768px) {
+    .referense-menu {
+      padding: 0;
+      width: 25%;
+      float: left;
+      padding-top: 75%;
+      min-height: inherit; } }
+  @media all and (min-width: 992px) {
+    .referense-menu {
+      width: 20%;
+      padding-top: 60%; } }
+  @media all and (min-width: 1200px) {
+    .referense-menu {
+      width: 16.6666667%;
+      padding-top: 50%; } }
+  @media all and (min-width: 1600px) {
+    .referense-menu {
+      width: 16.6666667%;
+      padding-top: 33.3%; } }
+  .referense-menu__view {
+    border-bottom: 1px solid #e8cdb1; }
+    @media all and (min-width: 440px) {
+      .referense-menu__view {
+        width: 50%; } }
+    @media all and (min-width: 768px) {
+      .referense-menu__view {
+        width: 100%; } }
+
+.view-label {
+  padding: 30px 15px; }
+  @media all and (min-width: 768px) {
+    .view-label {
+      padding: 50px 30px; } }
+  .view-label__label {
+    font-family: 'Museo Sans Cyrl 900';
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 17px; }
+  .view-label__list ul {
+    padding: 0;
+    margin: 0; }
+    .view-label__list ul li {
+      list-style-type: none;
+      margin-bottom: 8px; }
+      .view-label__list ul li a {
+        text-decoration: none;
+        color: #444444;
+        font-size: 16px; }
+        .view-label__list ul li a:hover {
+          text-decoration: underline; }
+
+.referense-menu-inner {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+  @media all and (min-width: 440px) {
+    .referense-menu-inner {
+      display: flex; } }
+  @media all and (min-width: 768px) {
+    .referense-menu-inner {
+      position: absolute;
+      display: block; } }
+
+/*referense*/
+/*hanak*/
+.hanak {
+  position: relative; }
+  .hanak img {
+    width: 100%; }
+  .hanak .bread {
+    padding-bottom: 0 !important; }
+    .hanak .bread a {
+      color: #fff; }
+
+.hanak-content {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0; }
+
+.hanak-label {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 38%; }
+  @media all and (min-width: 545px) {
+    .hanak-label {
+      top: 28%; } }
+  .hanak-label img {
+    width: 40%; }
+
+.article1 {
+  color: #959595; }
+  @media all and (min-width: 600px) {
+    .article1 {
+      display: flex; } }
+  .article1__img {
+    margin-bottom: 10px; }
+    @media all and (min-width: 600px) {
+      .article1__img {
+        margin-bottom: 0;
+        margin-right: 15px;
+        min-width: 40%; } }
+    .article1__img img {
+      max-width: 100%; }
+  .article1__text {
+    font-family: 'Museo Sans Cyrl 500';
+    font-size: 16px; }
+    @media all and (min-width: 600px) {
+      .article1__text {
+        display: flex;
+        align-items: center; } }
+    .article1__text span {
+      font-family: 'Museo Sans Cyrl 900';
+      color: #444444; }
+    .article1__text div {
+      line-height: 1.5; }
+
+.boss-label {
+  text-align: center; }
+
+/*hanak*/
 
 /*# sourceMappingURL=main.css.map */

@@ -1670,13 +1670,19 @@ body{
 }
 .bread {
   font-size: 14px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  span {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @media all and (min-width: 768px){
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  a {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
     margin-bottom: 8px;
+    text-decoration: none;
+    color: $grey3;
     &:hover {
       text-decoration: underline;
     }
@@ -2115,13 +2121,13 @@ body{
   }
 }
 .disigners-list {
-  display: flex;
-  flex-wrap: wrap;
+
 }
 .disigners-item {
   width: 100%;
   padding-top: 100%;
   position: relative;
+  float: left;
   @media all and (min-width: 360px){
     width: 50%;
     padding-top: 50%;
@@ -2164,6 +2170,9 @@ body{
     color: #fff;
     text-transform: uppercase;
     font-family: 'Museo Sans Cyrl 900';
+  }
+  &__adress {
+    display: none;
   }
 }
 .disigners-link {
@@ -2434,6 +2443,173 @@ body{
   }
 }
 /*awords*/
+
+/*referense*/
+body.referens {
+  .label-description {
+    text-align: center;
+  }
+  .referense-menu {
+    display: block !important;
+  }
+  .disigners-text {
+    &__adress {
+      display: block !important;
+      color: #fff;
+      font-size: 13px;
+    }
+  }
+}
+.referense-menu {
+  width: 100%;
+  background: #fae2ca;
+  display: none;
+  overflow: hidden;
+  min-height: 100px;
+  box-sizing: border-box;
+  position: relative;
+  @media all and (min-width: 768px){
+    padding: 0;
+    width: 25%;
+    float: left;
+    padding-top: 75%;
+    min-height: inherit;
+  }
+  @media all and (min-width: 992px){
+    width: 20%;
+    padding-top: 60%;
+  }
+  @media all and (min-width: 1200px){
+    width: 16.6666667%;
+    padding-top: 50%;
+  }
+  @media all and (min-width: 1600px){
+    width: 16.6666667%;
+    padding-top: 33.3%;
+  }
+  &__view {
+    border-bottom: 1px solid #e8cdb1;
+    @media all and (min-width: 440px){
+      width: 50%;
+    }
+    @media all and (min-width: 768px){
+      width: 100%;
+    }
+  }
+}
+.view-label {
+  padding: 30px 15px;
+  @media all and (min-width: 768px){
+    padding: 50px 30px;
+  }
+  &__label {
+    font-family: 'Museo Sans Cyrl 900';
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 17px;
+  }
+  &__list {
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        list-style-type: none;
+        margin-bottom: 8px;
+        a {
+          text-decoration: none;
+          color: $grey3;
+          font-size: 16px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+.referense-menu-inner {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  @media all and (min-width: 440px){
+    display: flex;
+  }
+  @media all and (min-width: 768px){
+    position: absolute;
+    display: block;
+  }
+}
+/*referense*/
+
+/*hanak*/
+.hanak {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .bread {
+    padding-bottom: 0 !important;
+    a {
+      color: #fff;
+    }
+  }
+}
+.hanak-content {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom:0;
+}
+.hanak-label {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 38%;
+  @media all and (min-width: 545px){
+    top: 28%;
+  }
+  img {
+    width: 40%;
+  }
+}
+.article1 {
+  color: $grey2;
+  @media all and (min-width: 600px){
+    display: flex;
+  }
+  &__img {
+    margin-bottom: 10px;
+    @media all and (min-width: 600px){
+      margin-bottom: 0;
+      margin-right: 15px;
+      min-width: 40%;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  &__text {
+    font-family: 'Museo Sans Cyrl 500';
+    font-size: 16px;
+    @media all and (min-width: 600px){
+      display: flex;
+      align-items: center;
+    }
+    span {
+      font-family: 'Museo Sans Cyrl 900';
+      color: $grey3;
+    }
+    div {
+      line-height: 1.5;
+    }
+  }
+}
+.boss-label {
+  text-align: center;
+}
+/*hanak*/
 
 
 
