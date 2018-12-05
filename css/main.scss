@@ -25,6 +25,7 @@ $grey: #e6e6e6;
 $grey2: #959595;
 $grey3: #444444;
 $red: #f3475b;
+$bezh: #e8cdb1;
 /*section colors end*/
 
 /*variable section*/
@@ -1668,6 +1669,12 @@ body{
     padding-bottom: 25px;
   }
 }
+.center {
+  text-align: center;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
 .bread {
   font-size: 14px;
   padding-top: 10px;
@@ -1766,6 +1773,7 @@ body{
   font-family: 'Museo Sans Cyrl 900';
   font-size: 22px;
   text-transform: uppercase;
+  color: $grey3;
 }
 .news-banner {
   box-sizing: border-box;
@@ -2488,7 +2496,7 @@ body.referens {
     padding-top: 33.3%;
   }
   &__view {
-    border-bottom: 1px solid #e8cdb1;
+    border-bottom: 1px solid $bezh;
     @media all and (min-width: 440px){
       width: 50%;
     }
@@ -2543,6 +2551,12 @@ body.referens {
 /*referense*/
 
 /*hanak*/
+.hanak-wrap {
+  padding-bottom: 30px;
+  @media all and (min-width: 992px){
+    padding-bottom: 90px;
+  }
+}
 .hanak {
   position: relative;
   img {
@@ -2576,6 +2590,7 @@ body.referens {
 }
 .article1 {
   color: $grey2;
+
   @media all and (min-width: 600px){
     display: flex;
   }
@@ -2608,6 +2623,184 @@ body.referens {
 }
 .boss-label {
   text-align: center;
+}
+.article2 {
+  @media all and (min-width: 600px){
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+  }
+  &__img {
+    margin-bottom: 15px;
+    flex-shrink: 0;
+    @media all and (min-width: 600px){
+      max-width: 60%;
+      margin-bottom: 0;
+      margin-left: 40px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  &__text {
+    color: $grey2;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    @media all and (min-width: 600px){
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.horizontal-line {
+  box-sizing: border-box;
+  width: 100%;
+  background: $bezh;
+  margin: 30px auto;
+  &__text {
+    text-align: center;
+    padding: 45px 0;
+    max-width: 676px;
+  }
+}
+.production-block {
+  color: $grey2;
+}
+.production-block-article1 {
+  font-size: 15px;
+  overflow: hidden;
+  margin-bottom: -4px;
+  @media all and (min-width: 600px){
+    display: flex;
+  }
+  &__img {
+    margin-bottom: 20px;
+    @media all and (min-width: 600px){
+      width: 40%;
+      flex-shrink: 0;
+      padding: 0;
+    }
+    @media all and (min-width: 992px){
+      width: 50%;
+      margin-bottom: 0;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  &__text {
+    color: $grey2;
+    @media all and (min-width: 600px){
+      box-sizing: border-box;
+      padding: 10px;
+      padding-top: 0;
+      display: flex;
+      align-items: center;
+    }
+    @media all and (min-width: 992px){
+      padding: 30px;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+  }
+}
+.production-block-article2 {
+  margin-bottom: 30px;
+  @media all and (min-width: 992px){
+    margin-bottom: -4px;
+  }
+  @media all and (min-width: 600px){
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  &__img {
+    margin-bottom: 20px;
+    @media all and (min-width: 600px){
+      flex-shrink: 0;
+      width: 40%;
+      margin-bottom: 0;
+    }
+    @media all and (min-width: 992px){
+      width: 50%;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  &__text {
+    @media all and (min-width: 600px){
+      padding: 10px;
+      padding-bottom: 0;
+    }
+    @media all and (min-width: 992px){
+      padding: 30px;
+      padding-bottom: 0;
+      display: flex;
+      align-items: center;
+    }
+
+  }
+}
+.conveer-description {
+  &__label {
+    margin-bottom: 20px;
+  }
+}
+.conveer-list {
+  @media all and (min-width: 1200px){
+    display: flex;
+  }
+  &__left {
+    @media all and (min-width: 1200px){
+      width: 50%;
+      flex-shrink: 0;
+    }
+  }
+  &__right {
+    @media all and (min-width: 1200px){
+      width: 50%;
+      flex-shrink: 0;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    @media all and (min-width: 600px){
+      padding-left: 0;
+    }
+    li {
+      list-style-type: none;
+      padding-left: 10px;
+      position: relative;
+      margin-bottom: 10px;
+      font-size: 14px;
+      @media all and (min-width: 992px){
+        font-size: 15px;
+      }
+      &:before {
+        content: '';
+        width: 5px;
+        height: 5px;
+        background: #000;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 9px;
+
+      }
+    }
+  }
+}
+.conveer-list-label {
+  text-align: center;
+  color: $grey3;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: 'Museo Sans Cyrl 900';
+  margin-bottom: 20px;
 }
 /*hanak*/
 
