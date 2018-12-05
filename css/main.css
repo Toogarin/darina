@@ -2262,6 +2262,42 @@ body.referens .disigners-text__adress {
 
 /*hanak*/
 /*delivery*/
+.prepayment-content {
+  border: 2px solid #959595;
+  padding: 15px; }
+  .prepayment-content__right {
+    color: #959595;
+    font-size: 14px; }
+
+.prepayment-content-label {
+  font-family: 'Museo Sans Cyrl 900';
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.prepayment-content-number {
+  color: #f3475b;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Museo Sans Cyrl 500'; }
+  .prepayment-content-number span {
+    font-size: 30px; }
+
+.prepayment-percent {
+  border: 2px solid #f3475b;
+  padding: 15px; }
+  .prepayment-percent__icon {
+    text-align: center; }
+  .prepayment-percent__text {
+    color: #959595;
+    font-size: 14px; }
+
+@media all and (min-width: 768px) {
+  .prepayment-block {
+    display: flex; } }
+.prepayment-block__left {
+  margin-bottom: 20px; }
+
 /*delivery*/
 
 /*# sourceMappingURL=main.css.map */
