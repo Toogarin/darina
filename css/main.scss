@@ -107,6 +107,10 @@ $transition: all 0.4s;
   display: flex;
 }
 
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
 /*flex*/
 
 /*margin*/
@@ -3090,7 +3094,7 @@ body.referens {
     height: 130px;
     background: #fff;
     border-radius: 50%;
-    margin: 20px auto;
+    margin: 30px auto 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3119,13 +3123,200 @@ body.referens {
 }
 
 .stage-block-list {
+  padding: 20px 0;
   @media all and (min-width: 450px) {
     display: flex;
     flex-wrap: wrap;
   }
+  @media all and (min-width: 1200px) {
+    background: url("../image/png/stage-arrow.png") no-repeat center;
+    background-size: contain;
+  }
+}
+
+.ton-description {
+  &__text {
+    padding: 50px 0;
+
+  }
+  &__icons {
+
+  }
+}
+
+.ton-list {
+  border: 2px solid $grey2;
+  background: url("../image/news/chairs.png") repeat center;
+  padding: 30px;
+  min-height: 100px;
+  padding-bottom: 0;
+  margin-bottom: 25px;
+  @media all and (min-width: 490px) {
+    display: flex;
+    padding: 30px 10px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.ton-list-item {
+  position: relative;
+  min-height: 145px;
+  @media all and (min-width: 490px) {
+    width: 50%;
+  }
+  @media all and (min-width: 768px) {
+    width: 33%;
+  }
+  @media all and (min-width: 992px) {
+    width: 20%;
+  }
+  &:before {
+    content: '';
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: -7px;
+    display: block;
+    background: #e8cdb1;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -38px;
+  }
+}
+
+.ton-item {
+  &__icon {
+    position: relative;
+    font-size: 50px;
+  }
+  &__text {
+    position: relative;
+    top: 21px;
+  }
 }
 
 /*delivery*/
+
+/*about TON*/
+.about-ton-row {
+  position: relative;
+  margin-bottom: -4px;
+  @media all and (min-width: 768px) {
+    display: flex;
+  }
+  @media all and (min-width: 992px) {
+    padding: 0;
+  }
+  &__img {
+    margin-bottom: 20px;
+    @media all and (min-width: 768px) {
+      width: 50%;
+      margin-bottom: 0;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  &__text {
+    @media all and (min-width: 768px) {
+      width: 50%;
+    }
+  }
+}
+
+.absolute-text {
+  padding-bottom: 25px;
+  @media all and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 0;
+  }
+  &__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    @media all and (min-width: 768px) {
+      display: flex;
+    }
+    &__left {
+      font-size: 14px;
+      box-sizing: border-box;
+      @media all and (min-width: 768px) {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        font-size: 12px;
+      }
+      @media all and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 2;
+      }
+    }
+    &__right {
+      box-sizing: border-box;
+      font-size: 14px;
+      @media all and (min-width: 768px) {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        padding: 0 30px;
+      }
+      @media all and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 2;
+      }
+    }
+  }
+}
+
+.about-ton {
+  border-bottom: $border;
+  padding-bottom: 30px;
+}
+
+.technology-block-label {
+  padding: 30px 0;
+}
+
+.technology-item {
+  position: relative;
+  &:before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: $grey2;
+    position: absolute;
+    left: 50%;
+    z-index: -1;
+  }
+  &:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: $grey2;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+  }
+  &__img {
+    img {
+      max-width: 100%;
+    }
+  }
+  &__num {
+
+  }
+  &__text {
+
+  }
+}
+/*about TON*/
 
 
 
