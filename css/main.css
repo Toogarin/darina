@@ -1731,6 +1731,9 @@ body {
     font-size: 14px;
     color: #959595; }
 
+.disigners-list {
+  position: relative; }
+
 .disigners-item {
   width: 100%;
   padding-top: 100%;
@@ -2027,11 +2030,22 @@ body {
 body.referens .label-description {
   text-align: center; }
 body.referens .referense-menu {
-  display: block !important; }
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 270px;
+  z-index: 10;
+  left: -270px;
+  transition: all 0.4s; }
+  body.referens .referense-menu.active {
+    left: 0 !important; }
 body.referens .disigners-text__adress {
   display: block !important;
   color: #fff;
   font-size: 13px; }
+
+.referense-item-wrap {
+  position: relative; }
 
 .referense-menu {
   width: 100%;
@@ -2046,20 +2060,7 @@ body.referens .disigners-text__adress {
       padding: 0;
       width: 25%;
       float: left;
-      padding-top: 75%;
       min-height: inherit; } }
-  @media all and (min-width: 992px) {
-    .referense-menu {
-      width: 20%;
-      padding-top: 60%; } }
-  @media all and (min-width: 1200px) {
-    .referense-menu {
-      width: 16.6666667%;
-      padding-top: 50%; } }
-  @media all and (min-width: 1600px) {
-    .referense-menu {
-      width: 16.6666667%;
-      padding-top: 33.3%; } }
   .referense-menu__view {
     border-bottom: 1px solid #e8cdb1; }
     @media all and (min-width: 440px) {
@@ -2091,19 +2092,6 @@ body.referens .disigners-text__adress {
         font-size: 16px; }
         .view-label__list ul li a:hover {
           text-decoration: underline; }
-
-.referense-menu-inner {
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0; }
-  @media all and (min-width: 440px) {
-    .referense-menu-inner {
-      display: flex; } }
-  @media all and (min-width: 768px) {
-    .referense-menu-inner {
-      position: absolute;
-      display: block; } }
 
 /*referense*/
 /*hanak*/

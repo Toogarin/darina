@@ -138,10 +138,19 @@ $(document).ready(function(){
     });
 
     var close = $('.favorite-item__close');
-
     close.on('click',function (){
         var curentFavorite = $(this).parent();
         curentFavorite.fadeOut();
+    });
+
+    var referense = $('.transition-referense');
+    var referenseMenu = $('.referense-menu');
+    // var widhtReferense = referenseMenu.width();
+    // referenseMenu.css({
+    //     left: - widhtReferense
+    // });
+    referense.on('click',function (){
+        referenseMenu.toggleClass('active');
     });
 
 

@@ -2278,7 +2278,7 @@ body {
 }
 
 .disigners-list {
-
+  position: relative;
 }
 
 .disigners-item {
@@ -2624,7 +2624,16 @@ body.referens {
     text-align: center;
   }
   .referense-menu {
-    display: block !important;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 270px;
+    z-index: 10;
+    left: -270px;
+    transition: $transition;
+    &.active {
+      left: 0 !important;
+    }
   }
   .disigners-text {
     &__adress {
@@ -2634,7 +2643,9 @@ body.referens {
     }
   }
 }
-
+.referense-item-wrap {
+  position: relative;
+}
 .referense-menu {
   width: 100%;
   background: #fae2ca;
@@ -2647,21 +2658,9 @@ body.referens {
     padding: 0;
     width: 25%;
     float: left;
-    padding-top: 75%;
     min-height: inherit;
   }
-  @media all and (min-width: 992px) {
-    width: 20%;
-    padding-top: 60%;
-  }
-  @media all and (min-width: 1200px) {
-    width: 16.6666667%;
-    padding-top: 50%;
-  }
-  @media all and (min-width: 1600px) {
-    width: 16.6666667%;
-    padding-top: 33.3%;
-  }
+
   &__view {
     border-bottom: 1px solid $bezh;
     @media all and (min-width: 440px) {
@@ -2701,20 +2700,6 @@ body.referens {
         }
       }
     }
-  }
-}
-
-.referense-menu-inner {
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  @media all and (min-width: 440px) {
-    display: flex;
-  }
-  @media all and (min-width: 768px) {
-    position: absolute;
-    display: block;
   }
 }
 
