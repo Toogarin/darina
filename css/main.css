@@ -2564,6 +2564,16 @@ body.referens .disigners-text__adress {
     z-index: -1; }
   .technology-item__img img {
     max-width: 100%; }
+  .technology-item__num {
+    width: 76px;
+    height: 76px;
+    background: #cee5d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 50%;
+    margin: 0 auto; }
 
 /*about TON*/
 

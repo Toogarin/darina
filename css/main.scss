@@ -45,6 +45,7 @@ $grey3: #444444;
 $red: #f3475b;
 $bezh: #e8cdb1;
 $green: #87b44e;
+$green2: #cee5d0;
 /*section colors end*/
 
 /*color class*/
@@ -3295,7 +3296,15 @@ body.referens {
     }
   }
   &__num {
-
+    width: 76px;
+    height: 76px;
+    background: $green2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 50%;
+    margin: 0 auto;
   }
   &__text {
 
