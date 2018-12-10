@@ -3270,8 +3270,29 @@ body.referens {
   padding: 30px 0;
 }
 
+.technology-list {
+  @media all and (min-width: 768px){
+    padding: 0 20px;
+  }
+}
+
+.technology-number {
+  width: 76px;
+  height: 76px;
+  background: $green2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
 .technology-item {
   position: relative;
+  @media all and (min-width: 768px){
+    display: flex;
+    align-items: center;
+  }
   &:before {
     content: '';
     width: 1px;
@@ -3281,33 +3302,51 @@ body.referens {
     left: 50%;
     z-index: -1;
   }
-  &:after {
-    content: '';
-    width: 100%;
-    height: 1px;
-    background: $grey2;
-    position: absolute;
-    top: 50%;
-    z-index: -1;
-  }
   &__img {
+    padding: 0 10px;
+    margin-bottom: 10px;
+    @media all and (min-width: 768px){
+      width: 50%;
+      padding: 0;
+    }
     img {
       max-width: 100%;
+      width: 100%;
     }
   }
   &__num {
-    width: 76px;
-    height: 76px;
-    background: $green2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    border-radius: 50%;
-    margin: 0 auto;
+    position: relative;
+    margin-bottom: 15px;
+    @media all and (min-width: 768px){
+      margin: 0;
+      padding: 0 15px;
+    }
+    &:after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: $grey2;
+      position: absolute;
+      top: 50%;
+      z-index: -1;
+      left: 0;
+    }
   }
   &__text {
+    padding: 0 10px;
+    @media all and (min-width: 768px){
+      width: 50%;
+      padding: 0;
+    }
+  }
+}
+.technology-description {
+  background: #fff;
+  border: $border;
+  padding: 10px;
 
+  &__label {
+    margin-bottom: 15px;
   }
 }
 /*about TON*/
